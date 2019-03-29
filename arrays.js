@@ -50,5 +50,81 @@
 //
 // }
 // console.log("Fin array.");
-///////////////
+
+////////////////////////////
 // Ejercicio 3
+// Calcular menor numero en un array
+///////////////////////////////////
+// var unoDiez = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// var randomNumbers = [3, 6, 67, 6, 23, 11, 100, 8, 93, 0, 17, 24, 7, 1, 33, 45, 28, 33, 23, 12, 99, 100];
+//
+// console.log("Menor numero: " + calculateLowest(randomNumbers));
+// console.log("Menor numero: " + calculateLowest(unoDiez));
+//
+// function calculateLowest(array) {
+//   var lowest = array[0];
+//   for (var i = 0; i < array.length; i++) {
+//     if (array[i] < lowest) {
+//       lowest = array[i];
+//     }
+//   }
+//   return lowest;
+// }
+//
+//
+// /////////////////////////////
+// // Ejercicio 4
+// // Calcular mayor numero en un array
+// ///////////////////////////
+//
+// console.log("Mayor numero: " + calculateBiggest(randomNumbers));
+// console.log("Mayor numero: " + calculateBiggest(unoDiez));
+//
+// function calculateBiggest(array) {
+//   var biggest = array[0];
+//   for (var i = 0; i < array.length; i++) {
+//     if (array[i] > biggest) {
+//       biggest = array[i];
+//     }
+//   }
+//   return biggest;
+// }
+// /////////////////////////////
+// // Ejercicio 5
+// // Mostrar numero en indice.
+// ///////////////////////////
+// var randomNumbers = [3, 6, 67, 6, 23, 11, 100, 8, 93, 0, 17, 24, 7, 1, 33, 45, 28, 33, 23, 12, 99, 100];
+// var index = 1;
+//
+// console.log("El numero es: " + showIndex(randomNumbers, index));
+//
+// function showIndex (array, index){
+//   return array[index];
+// }
+// /////////////////////////////
+// // Ejercicio 5
+// // Mostrar numero en indice.
+// ///////////////////////////
+var randomNumbers = [3, 6, 67, 6, 23, 11, 100, 8, 93, 0, 17, 24, 7, 1, 33, 45, 28, 33, 23, 12, 99, 100];
+var repeated = showRepeat(randomNumbers);
+
+for (var i = 0; i < repeated.length; i++) {
+    console.log(repeated[i]);
+}
+
+
+function showRepeat(array) {
+  var repeated = [0];
+  for (var i = 0; i < array.length; i++) {
+    for (var j = 0; j < array.length; j++) {
+        if (array[i] === array[j]) {
+          repeated.push(array[j]);
+        }
+    }
+  }
+  return repeated;
+}
+/////////////////////////////
+// Ejercicio 5
+// Mostrar numero en indice.
+///////////////////////////
