@@ -140,16 +140,24 @@
 // ///////////////////////////
 // var array = [3, 6, 67, 6, 23, 11, 100, 8, 93, 0, 17, 24, 7, 1, 33, 45, 28, 33, 23, 12, 99, 100];
 // var repeated = [];
-// var another= [];
-// for (var i = 0; i < array.length; i++) {
-//   // Si indexOf no puede encontrar ningua repeticion regresa "-1".
 //
-//   if (repeated.indexOf(array[i]) === array[i]) { //
-//     repeated.push(array[i])
+// console.log(showRepeated(array));
+//
+// function showRepeated(array) {
+//   var repeated = [];
+//   for (i = 0; i < array.length; i++) { // Comienzo a iterar el array de numeros
+//     // Si indexOf no puede encontrar ninguna repeticion regresa "-1"(false).
+//     if (repeated.indexOf(array[i])) { //Si encuentra, vuelvo a iterar el array de numeros, y comparo.
+//       for (j = i + 1; j < array.length; j++) {
+//         if (array[i] === array[j]) { // Cuando encuentre una repeticion, lo copia al array repeated.
+//           repeated.push(array[i]);
+//           break;
+//         }
+//       }
+//     }
 //   }
-//
+//   return repeated;
 // }
-
 /////////////////////////////
 // Ejercicio 7
 // Mostrar elementos en un string:
