@@ -1,1 +1,0 @@
-Basicamente es un archivo HTML para practicar JavaScript.
