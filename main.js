@@ -149,7 +149,7 @@ function showRepeated(array) {
         // Si indexOf no puede encontrar ninguna repeticion regresa "-1"(false).
         if (repeated.indexOf(array[i])) { //Si encuentra, vuelvo a iterar el array de numeros, y comparo.
             for (j = i + 1; j < array.length; j++) {
-                if (array[i] === array[j]) { // Cuando encuentre una repeticion, lo copia al array repeated.
+                if (array[i] === array[j] && repeated.indexOf(array[j])) { // Cuando encuentre una repeticion, lo copia al array repeated.
                     repeated.push(array[i]);
                 }
             }
